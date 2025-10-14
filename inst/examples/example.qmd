@@ -1,0 +1,97 @@
+---
+title: "{brandthis} demo"
+author: "Dr. U"
+format: 
+  html:
+    fig-width: 8
+    fig-height: 4
+---
+
+```{r}
+library(ggplot2)
+library(ggsci)
+library(brand.yml)
+```
+
+
+## Example
+
+### Default Plot
+
+```{r}
+p <- ggplot(mtcars, aes(mpg, wt)) +
+  geom_point(aes(colour = factor(cyl)))
+p
+```
+
+### Create `_brand.yml` and save to disk
+
+```{r}
+#| eval: false
+# Personal brand
+my_brand <- brandthis::create_brand("<prompt>", 
+                        img = "<any inspiring image>", 
+                        type = "personal")
+
+# Company brand
+company_brand <-brandthis::create_brand("<prompt>", 
+                        img = "<screenshots of company branding>", 
+                        type = "company")
+```
+
+
+## Read `_brand.yml`
+
+```{r}
+my_brand <- brand.yml::read_brand_yml(system.file("examples", "_brand.yml", package = "brandthis"))
+
+my_brand
+```
+
+## Suggest ggsci color scales and palettes
+
+```{r}
+#| eval: false
+brandthis::suggest_color_scales(my_brand)
+# *   **Discrete palette:**
+#   *   `pal_d3(palette = "category10")`
+# *   `scale_color_d3(palette = "category10")` or
+# `scale_fill_d3(palette = "category10")`
+# *   **Sequential palettes:**
+#   1.  `pal_material(palette = "deep-orange")`
+# *   `scale_color_material(palette = "deep-orange")` or
+# `scale_fill_material(palette = "deep-orange")`
+# 2.  `pal_material(palette = "blue")`
+# *   `scale_color_material(palette = "blue")` or
+# `scale_fill_material(palette = "blue")`
+# *   **Diverging palette:**
+#   *   `pal_gsea(palette = "default")`
+# *   `scale_color_gsea(palette = "default")` or
+# `scale_fill_gsea(palette = "default")`
+```
+
+
+## Plot with new ggsci color scale
+
+```{r}
+p + ggsci::scale_color_d3(palette = "category10")
+```
+
+## Create `ggplot2` theme with `quarto` package 
+
+```{r}
+my_theme <- quarto::theme_brand_ggplot2(my_brand)
+```
+
+## Plot with new theme
+
+```{r}
+p + my_theme
+```
+
+## Plot with new theme and ggsic color scale
+
+```{r}
+p + my_theme + ggsci::scale_color_d3(palette = "category10")
+```
+

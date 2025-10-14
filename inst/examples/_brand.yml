@@ -1,0 +1,68 @@
+meta:
+  name:
+    short: Big Head
+    full: Big Head
+  link:
+    home: https://example.com/
+color:
+  palette:
+    brown: '#7B4F2F'
+    light-brown: '#AC885F'
+    dark-brown: '#47250F'
+    orange: '#BB5F29'
+    beige: '#E0C6A3'
+  foreground: '#47250F'
+  background: '#E0C6A3'
+  primary: '#BB5F29'
+  secondary: '#AC885F'
+  success: '#4CAF50'
+  info: '#2196F3'
+  warning: '#FFC107'
+  danger: '#F44336'
+  light: '#E0C6A3'
+  dark: '#47250F'
+typography:
+  fonts:
+    - family: Amatic SC
+      source: google
+      weight:
+        - 400
+        - 700
+    - family: Andika
+      source: google
+      weight: 400
+    - family: Fira Code
+      source: bunny
+      weight: 400
+  base:
+    family: Andika
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Amatic SC
+    weight: 700
+    line-height: 1.2
+    color: '#47250F'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#BB5F29'
+    background-color: '#f8f9fa'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#47250F'
+    background-color: '#E0C6A3'
+    line-height: 1.4
+  link:
+    weight: 400
+    color: '#BB5F29'
+    background-color: transparent
+    decoration: underline

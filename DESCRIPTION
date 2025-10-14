@@ -1,0 +1,24 @@
+Package: brandthis
+Title: Create _brand.yml and ggplot2 goodies for personal or company branding
+Version: 0.0.0.9000
+Authors@R: 
+    person("Umair", "Durrani", , "umairdurrani@outlook.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7235-1155"))
+Description: Create _brand.yml, ggplot2 color scales & theme, and other stuff for personal or company branding.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: 
+    brand.yml,
+    colorfindr,
+    ellmer,
+    ragnar,
+    savonliquide,
+    tcltk
+Suggests:
+    glue,
+    httr
+Depends: 
+    R (>= 3.5)
+LazyData: true
