@@ -26,15 +26,34 @@ chat_brand <- function(chat_fn = ellmer::chat_google_gemini, ...){
 
 #' Create _brand.yml
 #'
+#' Create a personal/company \code{_brand.yml} file using your favourite LLM.
+#'
 #' @param prompt User prompt. May include info. about brand name, colors, fonts, and logo.
-#' @param img Image URL(s) and/or path(s). Only path(s) are allowed for \code{type = "company"}.
+#' @param img Image URL(s) and/or path(s). Only path(s) are allowed for \code{type = "company"}. Default is \code{NULL}.
 #' @param browse Whether to browse for image(s) in the file system. Default is \code{FALSE}.
-#' @param type Brand type. \code{"personal"} or \code{"company"}.
-#' @param chat_fn Ellmer chat function, e.g., \code{ellmer::chat_google_gemini}.
+#' @param type Brand type. \code{"personal"} or \code{"company"}. See Details.
+#' @param chat_fn [Ellmer](https://ellmer.tidyverse.org/#providers) chat function. Default is \code{ellmer::chat_google_gemini}.
 #' @param ... Parameters of ellmer chat function.
 #'
 #' @returns _brand.yml object
 #' @export
+#' @details
+#' Generating _brand.yml requires info. about your brand name, colors, typography,
+#' and logos. If no info. is provided, \code{create_brand} will ask for it.
+#' Brand name and image(s) or colors are required at a minimum.
+#' \code{create_brand} will use a random combination of Google Fonts if no
+#' typography info. is provided.
+#'
+#' Personal Branding: You may provide a single image path or a URL that \code{create_brand} will use
+#' to extract colors as the first step. These colors will then be used by an LLM
+#' to generate the color palette and semantic colors for the _brand.yml.
+#' If an image is not provided, the LLM will use info. from the \code{prompt}.
+#'
+#' Company Branding: You may provide one or more image paths of company branding guidelines that
+#' an LLM will extract info. from for creating the _brand.yml. Image URLs are
+#' not allowed. If no image(s) are provided, \code{create_brand} will rely on
+#' the \code{prompt}.
+
 #' @examples
 #' \dontrun{
 #' # Create a personal _brand.yml with a local image
@@ -42,7 +61,8 @@ chat_brand <- function(chat_fn = ellmer::chat_google_gemini, ...){
 #'   "My name is Katniss Everdeen",
 #'   browse = TRUE,
 #'   type = "personal",
-#'   chat_fn = ellmer::chat_google_gemini
+#'   chat_fn = ellmer::chat_github,
+#'   model = "gpt-4.1"
 #' )
 #'
 #' # Create a personal _brand.yml with an image URL
