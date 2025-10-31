@@ -1,0 +1,63 @@
+meta:
+  name:
+    short: Mr. Seagull
+    full: Mr. Seagull
+  link:
+    home: https://example.com/
+color:
+  palette:
+    white: '#FFFFFF'
+    black: '#000000'
+    light-blue-gray: '#E6EBF1'
+    khaki: '#B1A655'
+    light-gray-blue: '#D5DCE1'
+    dark-green: '#54684C'
+    tan: '#C1B892'
+  foreground: '#54684C'
+  background: '#E6EBF1'
+  primary: '#54684C'
+  secondary: '#B1A655'
+  tertiary: '#C1B892'
+  light: '#D5DCE1'
+  dark: '#54684C'
+typography:
+  fonts:
+    - family: Ultra
+      source: google
+    - family: Slabo 27px
+      source: google
+    - family: Fira Code
+      source: bunny
+  base:
+    family: Slabo 27px
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Ultra
+    weight: 600
+    style: normal
+    line-height: 1.2
+    color: '#333333'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#7d12ba'
+    background-color: '#f8f9fa'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#54684C'
+    background-color: '#E6EBF1'
+    line-height: 1.4
+  link:
+    weight: 600
+    color: '#0066cc'
+    background-color: transparent
+    decoration: underline

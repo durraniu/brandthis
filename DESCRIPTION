@@ -12,10 +12,15 @@ RoxygenNote: 7.3.2
 Imports: 
     brand.yml,
     colorfindr,
+    DBI,
     ellmer,
+    fs,
     ragnar,
     savonliquide,
-    tcltk
+    tcltk,
+    tools,
+    utils,
+    withr
 Suggests:
     glue,
     httr

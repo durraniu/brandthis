@@ -1,0 +1,66 @@
+meta:
+  name:
+    short: Katniss
+    full: Katniss Everdeen
+  link:
+    home: https://example.com/katniss/
+color:
+  palette:
+    dark-brown: '#47250F'
+    medium-brown: '#7B4F2F'
+    light-brown: '#AC885F'
+    orange: '#BB5F29'
+    creamy-beige: '#E0C6A3'
+  foreground: '#47250F'
+  background: '#E0C6A3'
+  primary: '#7B4F2F'
+  secondary: '#AC885F'
+  warning: '#BB5F29'
+typography:
+  fonts:
+    - family: Work Sans
+      source: google
+      weight:
+        - 400
+        - 600
+    - family: Open Sans
+      source: google
+      weight:
+        - 400
+        - 600
+    - family: Fira Code
+      source: bunny
+      weight: 400
+  base:
+    family: Open Sans
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Work Sans
+    weight: 600
+    style: normal
+    line-height: 1.2
+    color: '#333333'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#7d12ba'
+    background-color: '#f8f9fa'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#47250F'
+    background-color: '#E0C6A3'
+    line-height: 1.4
+  link:
+    weight: 600
+    color: '#7B4F2F'
+    background-color: transparent
+    decoration: underline

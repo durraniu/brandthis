@@ -1,0 +1,61 @@
+meta:
+  name:
+    short: Big Head
+    full: Big Head
+color:
+  palette:
+    dark-green: '#2A3222'
+    medium-green: '#4F5749'
+    light-gray: '#A7B0B5'
+    blue: '#4499FC'
+    gray: '#737977'
+    white: '#FFFFFF'
+  foreground: '#2A3222'
+  background: '#FFFFFF'
+  primary: '#4499FC'
+  secondary: '#737977'
+  tertiary: '#A7B0B5'
+  info: '#4499FC'
+  light: '#FFFFFF'
+  dark: '#2A3222'
+typography:
+  fonts:
+    - family: Oswald
+      source: google
+    - family: EB Garamond
+      source: google
+    - family: Fira Code
+      source: bunny
+  base:
+    family: EB Garamond
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Oswald
+    weight: 600
+    style: normal
+    line-height: 1.2
+    color: '#333333'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#4499FC'
+    background-color: '#F2F8FD'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#2A3222'
+    background-color: '#FFFFFF'
+    line-height: 1.4
+  link:
+    weight: 600
+    color: '#0066cc'
+    background-color: transparent
+    decoration: underline

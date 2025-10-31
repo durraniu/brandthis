@@ -1,0 +1,85 @@
+meta:
+  name:
+    short: Paul
+    full: Paul Blart
+  link:
+    home: https://paulblart.com/
+color:
+  palette:
+    dark-blue: '#212836'
+    medium-blue: '#464B6B'
+    light-gray-blue: '#EBE6D0'
+    blue: '#447099'
+    orange: '#EE6331'
+    green: '#72994E'
+    teal: '#419599'
+    burgundy: '#9A4665'
+  foreground: '#212836'
+  background: '#EBE6D0'
+  primary: '#447099'
+  secondary: '#464B6B'
+  success: '#72994E'
+  info: '#419599'
+  warning: '#EE6331'
+  danger: '#9A4665'
+  light: '#FFFFFF'
+  dark: '#404041'
+typography:
+  fonts:
+    - family: Lora
+      source: google
+      weight:
+        - 400
+        - 700
+      style:
+        - normal
+        - italic
+    - family: Merriweather
+      source: google
+      weight:
+        - 400
+        - 700
+      style:
+        - normal
+        - italic
+    - family: Fira Code
+      source: bunny
+      weight:
+        - 400
+        - 500
+        - 600
+      style:
+        - normal
+        - italic
+  base:
+    family: Merriweather
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Lora
+    weight: 700
+    style: normal
+    line-height: 1.2
+    color: '#212836'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#7d12ba'
+    background-color: '#f8f9fa'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#212836'
+    background-color: '#EBE6D0'
+    line-height: 1.4
+  link:
+    weight: 600
+    color: '#447099'
+    decoration: underline

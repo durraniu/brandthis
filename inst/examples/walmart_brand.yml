@@ -1,0 +1,90 @@
+meta:
+  name:
+    short: Walmart
+    full: Walmart Inc.
+  link:
+    home: https://www.walmart.com/
+logo:
+  images:
+    primary-blue-logo:
+      path: logos/primary-blue-logo.png
+      alt: Walmart blue logo
+    primary-white-logo:
+      path: logos/primary-white-logo.png
+      alt: Walmart white logo
+    spark-icon:
+      path: logos/spark-icon.png
+      alt: Walmart spark icon
+  small:
+    path: logos/spark-icon.png
+    alt: Walmart spark icon
+  medium:
+    light:
+      path: logos/primary-blue-logo.png
+      alt: Walmart blue logo
+    dark:
+      path: logos/primary-white-logo.png
+      alt: Walmart white logo
+  large:
+    path: logos/primary-blue-logo.png
+    alt: Walmart blue logo
+color:
+  palette:
+    white: '#FFFFFF'
+    black: '#041E42'
+    blue: '#0071DC'
+    red: '#DE1C24'
+    yellow: '#FFC220'
+    light-blue: '#8CD1FC'
+    dark-blue: '#0C2340'
+    light-yellow: '#F8E6A5'
+    light-grey: '#FAFAFA'
+  foreground: '#041E42'
+  background: '#FFFFFF'
+  primary: '#0071DC'
+  secondary: '#041E42'
+  success: '#0071DC'
+  info: '#8CD1FC'
+  warning: '#DE1C24'
+  danger: '#DE1C24'
+  light: '#FFFFFF'
+  dark: '#041E42'
+typography:
+  fonts:
+    - family: Martel Sans
+      source: google
+    - family: Fira Code
+      source: system
+  base:
+    family: Martel Sans
+    weight: 400
+    size: 16px
+    line-height: 1.5
+  headings:
+    family: Martel Sans
+    weight: 600
+    style: normal
+    line-height: 1.2
+    color: '#041E42'
+  monospace:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+  monospace-inline:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#041E42'
+    background-color: '#FAFAFA'
+  monospace-block:
+    family: Fira Code
+    weight: 400
+    size: 0.9em
+    color: '#041E42'
+    background-color: '#FFFFFF'
+    line-height: 1.4
+  link:
+    weight: 600
+    color: '#0071DC'
+    background-color: transparent
+    decoration: underline

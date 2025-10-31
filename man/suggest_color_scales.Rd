@@ -4,10 +4,20 @@
 \alias{suggest_color_scales}
 \title{Suggest ggsci color palettes and scales}
 \usage{
-suggest_color_scales(brand_yml, chat_fn = ellmer::chat_google_gemini, ...)
+suggest_color_scales(
+  brand_yml,
+  pkg = c("paletteer", "ggsci"),
+  top_k = 8L,
+  chat_fn = ellmer::chat_google_gemini,
+  ...
+)
 }
 \arguments{
 \item{brand_yml}{_brand.yml object}
+
+\item{pkg}{ggsci or paletteer}
+
+\item{top_k}{Number of excerpts to request from the knowledge store for each retrieval}
 
 \item{chat_fn}{Ellmer chat function, e.g., \code{ellmer::chat_google_gemini}.}
 

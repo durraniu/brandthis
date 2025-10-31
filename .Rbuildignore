@@ -3,3 +3,5 @@
 ^data-raw$
 ^LICENSE\.md$
 ^README\.Rmd$
+^inst/extdata/.*\.duckdb$
+^inst/examples$
