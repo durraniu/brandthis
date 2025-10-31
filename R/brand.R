@@ -53,7 +53,7 @@ chat_brand <- function(chat_fn = ellmer::chat_google_gemini, ...){
 #' an LLM will extract info. from for creating the _brand.yml. Image URLs are
 #' not allowed. If no image(s) are provided, \code{create_brand} will rely on
 #' the \code{prompt}.
-
+#'
 #' @examples
 #' \dontrun{
 #' # Create a personal _brand.yml with a local image

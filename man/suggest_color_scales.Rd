@@ -2,7 +2,7 @@
 % Please edit documentation in R/suggest_color_scales.R
 \name{suggest_color_scales}
 \alias{suggest_color_scales}
-\title{Suggest ggsci color palettes and scales}
+\title{Suggest paletteer or ggsci color palettes and scales}
 \usage{
 suggest_color_scales(
   brand_yml,
@@ -13,9 +13,9 @@ suggest_color_scales(
 )
 }
 \arguments{
-\item{brand_yml}{_brand.yml object}
+\item{brand_yml}{_brand.yml object.}
 
-\item{pkg}{ggsci or paletteer}
+\item{pkg}{paletteer or ggsci}
 
 \item{top_k}{Number of excerpts to request from the knowledge store for each retrieval}
 
@@ -27,5 +27,16 @@ suggest_color_scales(
 Suggested palettes and scales
 }
 \description{
-Suggest ggsci color palettes and scales
+Suggest paletteer or ggsci color palettes and scales
+}
+\examples{
+\dontrun{
+personal_brand <- create_brand(
+  "My name is Paul Blart",
+  img = "https://free-images.com/md/7687/blue_jay_bird_nature.jpg",
+  type = "personal",
+  chat_fn = ellmer::chat_google_gemini
+)
+suggested_scales <- suggest_color_scales(personal_brand)
+}
 }

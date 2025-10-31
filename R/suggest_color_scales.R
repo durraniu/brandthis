@@ -1,26 +1,24 @@
-#' Get hex codes of all semantic colors
+#' Suggest paletteer or ggsci color palettes and scales
 #'
-#' @param color_list List containing \code{palette} and semantic colors
-#'
-#' @returns List of hex codes for each semantic color
-semantic_colors_as_hex_codes <- function(color_list) {
-  sapply(color_list[!names(color_list) %in% c("palette", "light", "dark")], function(val) {
-    if (val %in% names(color_list$palette)) color_list$palette[[val]] else val
-  }, simplify = FALSE)
-}
-
-
-
-#' Suggest ggsci color palettes and scales
-#'
-#' @param brand_yml _brand.yml object
+#' @param brand_yml _brand.yml object.
 #' @param chat_fn Ellmer chat function, e.g., \code{ellmer::chat_google_gemini}.
 #' @param ... Parameters of ellmer chat function.
-#' @param pkg ggsci or paletteer
+#' @param pkg paletteer or ggsci
 #' @param top_k Number of excerpts to request from the knowledge store for each retrieval
 #'
 #' @returns Suggested palettes and scales
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' personal_brand <- create_brand(
+#'   "My name is Paul Blart",
+#'   img = "https://free-images.com/md/7687/blue_jay_bird_nature.jpg",
+#'   type = "personal",
+#'   chat_fn = ellmer::chat_google_gemini
+#' )
+#' suggested_scales <- suggest_color_scales(personal_brand)
+#' }
 suggest_color_scales <- function(brand_yml,
                                  pkg = c("paletteer", "ggsci"),
                                  top_k = 8L,

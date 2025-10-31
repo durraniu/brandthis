@@ -80,7 +80,7 @@ get_fonts_combination_tool <- ellmer::tool(
   description = "Returns a vector of 1 pair of google fonts. H indicates heading font and B indicates body font."
 )
 
-# Tool: Check Coreground and Background Contrast
+# Tool: Check Color foreground and Background Contrast
 #' @importFrom savonliquide check_contrast
 check_contrast_tool <- ellmer::tool(
   check_contrast,
@@ -91,3 +91,15 @@ check_contrast_tool <- ellmer::tool(
     bg_col = ellmer::type_string("Background Color", required = TRUE)
   )
 )
+
+
+#' Get hex codes of all semantic colors
+#'
+#' @param color_list List containing \code{palette} and semantic colors
+#'
+#' @returns List of hex codes for each semantic color
+semantic_colors_as_hex_codes <- function(color_list) {
+  sapply(color_list[!names(color_list) %in% c("palette", "light", "dark")], function(val) {
+    if (val %in% names(color_list$palette)) color_list$palette[[val]] else val
+  }, simplify = FALSE)
+}

@@ -12,6 +12,6 @@ Suggest the paletteer `scale_*` functions with the relevant `palette` value for:
 * 3 sequential palettes choices (Only `scale_color_paletteer_c` functions) Note that Sequential palettes use a gradient of colors that range from low to high intensity or lightness, making them ideal for representing data with increasing or decreasing values.
 * 2 diverging palette choices (Only `scale_color_paletteer_c` functions). Note that Diverging palettes have a central neutral color and contrasting colors at the ends, making them suitable for visualizing data with a natural midpoint.
 
-The color scales that you suggest must have the provided `primary` color (or a color close to it) in the suggested palettes.
+The color scales that you suggest must have 1 color that is identical to or is close to the provided `primary` color.
 Other colors in the suggested palettes should preferably be similar to the provided semantic colors.
 DO NOT say anything extra. 

@@ -23,8 +23,10 @@ list(foreground = "#54684C", background = "#E6EBF1",
      primary = "#54684C", secondary = "#B1A655", tertiary = "#C1B892", )
 
 
-scolors <- brandthis::suggest_color_scales(res, pkg = "ggsci")
-scolors2 <- brandthis::suggest_color_scales(res, pkg = "paletteer")
+color_palettes <- create_color_palette(res)
+
+scolors <- suggest_color_scales(res, pkg = "ggsci")
+scolors2 <- suggest_color_scales(res, pkg = "paletteer")
 
 
 
@@ -44,6 +46,8 @@ my_theme <- quarto::theme_brand_ggplot2(res)
 
 
 # discrete
+cars + my_theme + scale_color_manual(values = color_palettes$qualitative1)
+cars + my_theme + scale_color_manual(values = color_palettes$qualitative2)
 cars + my_theme + scale_color_jco(palette = "default") #scale_disc1
 cars + my_theme + scale_color_lancet() #scale_disc2
 cars + my_theme + scale_color_paletteer_d("ggthemes::wsj_black_green",
@@ -53,6 +57,9 @@ cars + my_theme + scale_color_paletteer_d("calecopal::grasswet",
 
 
 # sequential
+mpgs + my_theme + scale_color_gradientn(colors = color_palettes$sequential1)
+mpgs + my_theme + scale_color_gradientn(colors = color_palettes$sequential2)
+mpgs + my_theme + scale_color_gradientn(colors = color_palettes$sequential3)
 mpgs + my_theme + scale_color_material("teal") #scale_seq1
 mpgs + my_theme + scale_color_material("light-green")#scale_seq2
 mpgs + my_theme + scale_color_material("brown")#scale_seq3
@@ -61,6 +68,8 @@ mpgs + my_theme + scale_color_paletteer_c("scico::devon")
 mpgs + my_theme + scale_color_paletteer_c("pals::ocean.thermal")
 
 # diverging
+divg + my_theme + scale_color_gradientn(colors = color_palettes$diverging1)
+divg + my_theme + scale_color_gradientn(colors = color_palettes$diverging2)
 divg + my_theme + scale_color_gsea() #scale_div1
 divg + my_theme + scale_color_paletteer_c("ggthemes::Red-Green Diverging")#scale_div2
 divg + my_theme + scale_color_paletteer_c("ggthemes::Classic Red-White-Green")

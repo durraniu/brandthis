@@ -12,6 +12,6 @@ Suggest the ggsci `scale_*` functions with the relevant `palette` value for:
 * 3 sequential palettes choices 
 * GSEA for diverging
 
-The color scales that you suggest must have the provided `primary` color (or a color close to it) in the suggested palettes.
+The color scales that you suggest must have 1 color that is identical to or is close to the provided `primary` color.
 Other colors in the suggested palettes should preferably be similar to the provided semantic colors.
 DO NOT say anything extra. 
