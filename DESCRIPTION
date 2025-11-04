@@ -24,8 +24,6 @@ Imports:
 Suggests:
     glue,
     httr
-Remotes: 
-    posit-dev/brand-yml/pkg-r
 Depends: 
     R (>= 3.5)
 LazyData: true
