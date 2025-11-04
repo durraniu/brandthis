@@ -36,15 +36,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev
 
-      - name: Set up R-universe repo
-        run: |
-          options(repos = c(
-            'https://posit-dev.r-universe.dev',
-            'https://cloud.r-project.org'
-          ))
-          install.packages('pak')
-          pak::repo_add('posit-dev', 'https://posit-dev.r-universe.dev')
-        shell: Rscript {0}
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
