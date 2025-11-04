@@ -5,3 +5,7 @@
 ^README\.Rmd$
 ^inst/extdata/.*\.duckdb$
 ^inst/examples$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
+^\.github$
