@@ -25,8 +25,8 @@ specifying colors, fonts, logos, and other information in one file.
 You can install the development version of {brandthis} from GitHub with:
 
 ``` r
-# install.packages("pak")
-pak::pak("durraniu/brandthis")
+# install.packages("remotes")
+remotes::install_github("durraniu/brandthis")
 ```
 
 ## Getting Started
