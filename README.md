@@ -86,3 +86,33 @@ suggested_scales <- brandthis::suggest_color_scales(personal_brand, "paletteer")
 ``` r
 color_palettes <- brandthis::create_color_palette(personal_brand)
 ```
+
+## createBranding App
+
+{brandthis} comes with a shiny app that lets you generate the
+`_brand.yml` and color palettes with the benefit of reviewing the
+results in the app. You can launch the app by running `run_brand_app()`:
+
+<figure>
+<img src="man/figures/brandthis_gif.gif" alt="Demo" />
+<figcaption aria-hidden="true">Demo</figcaption>
+</figure>
+
+The `createBranding` app is built on the [brand.yml
+app](shiny::runExample(%22brand.yml%22,%20package%20=%20%22bslib%22))
+available in bslib and can be launched by running
+`shiny::runExample("brand.yml", package = "bslib")`.
+
+## Acknowledgements
+
+All the credit goes to the creators of ggplot2, shiny, bslib, brand.yml,
+quarto, ragnar, ellmer, and several other packages that made brandthis
+possible. I am very thankful to [Garrick
+Aden-Buie](https://github.com/gadenbuie) for not only creating the
+awesome packages and documentation, but also patiently answering my
+questions on Discord, GitHub Discussions and issues. I am also very
+grateful to [Tomasz Kalinowski](https://github.com/t-kalinowski) whose
+`quartohelp` R package showed me how to release knowledge stores on
+GitHub and make them useful to brandthis users. I adapted several of
+`quartohelp` store-related functions for brandthis (see `R/store.R` in
+the package source).

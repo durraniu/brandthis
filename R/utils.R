@@ -103,3 +103,18 @@ semantic_colors_as_hex_codes <- function(color_list) {
     if (val %in% names(color_list$palette)) color_list$palette[[val]] else val
   }, simplify = FALSE)
 }
+
+
+
+#' Launch Shiny App
+#'
+#' @export
+#' @examples
+#' \dontrun{
+#' run_brand_app()
+#' }
+run_brand_app <- function() {
+  app_dir <- system.file("app", package = "brandthis")
+
+  shiny::runApp(app_dir, display.mode = "normal")
+}

@@ -3,6 +3,7 @@
 export(chat_brand)
 export(create_brand)
 export(create_color_palette)
+export(run_brand_app)
 export(suggest_color_scales)
 export(update_store)
 importFrom(savonliquide,check_contrast)
