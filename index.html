@@ -113,6 +113,19 @@
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">color_palettes</span> <span class="op">&lt;-</span> <span class="fu">brandthis</span><span class="fu">::</span><span class="fu"><a href="reference/create_color_palette.html">create_color_palette</a></span><span class="op">(</span><span class="va">personal_brand</span><span class="op">)</span></span></code></pre></div>
 </div>
+<div class="section level2">
+<h2 id="createbranding-app">createBranding App<a class="anchor" aria-label="anchor" href="#createbranding-app"></a>
+</h2>
+<p>{brandthis} comes with a shiny app that lets you generate the <code>_brand.yml</code> and color palettes with the benefit of reviewing the results in the app. You can launch the app by running <code><a href="reference/run_brand_app.html">run_brand_app()</a></code>:</p>
+<figure><img src="reference/figures/brandthis_gif.gif" alt="Demo"><figcaption aria-hidden="true">
+Demo
+</figcaption></figure><p>The <code>createBranding</code> app is built on the <a href="shiny::runExample(%22brand.yml%22,%20package%20=%20%22bslib%22)">brand.yml app</a> available in bslib and can be launched by running <code>shiny::runExample("brand.yml", package = "bslib")</code>.</p>
+</div>
+<div class="section level2">
+<h2 id="acknowledgements">Acknowledgements<a class="anchor" aria-label="anchor" href="#acknowledgements"></a>
+</h2>
+<p>All the credit goes to the creators of ggplot2, shiny, bslib, brand.yml, quarto, ragnar, ellmer, and several other packages that made brandthis possible. I am very thankful to <a href="https://github.com/gadenbuie" class="external-link">Garrick Aden-Buie</a> for not only creating the awesome packages and documentation, but also patiently answering my questions on Discord, GitHub Discussions and issues. I am also very grateful to <a href="https://github.com/t-kalinowski" class="external-link">Tomasz Kalinowski</a> whose <code>quartohelp</code> R package showed me how to release knowledge stores on GitHub and make them useful to brandthis users. I adapted several of <code>quartohelp</code> store-related functions for brandthis (see <code>R/store.R</code> in the package source).</p>
+</div>
 </div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
