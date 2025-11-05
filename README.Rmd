@@ -41,6 +41,10 @@ You can install the development version of {brandthis} from GitHub with:
 remotes::install_github("durraniu/brandthis")
 ```
 
+> NOTE: {brandthis} is currently not compatible with `ggplot2` version 4.0.0.
+Please use an earlier version.  
+
+
 ## Getting Started
 
 {brandthis} uses LLM APIs for generating `_brand.yml` and color palettes/scales.
