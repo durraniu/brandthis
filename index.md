@@ -1,6 +1,6 @@
 # brandthis
 
-![brandthis logo](inst/figures/logo.png)
+![brandthis logo](reference/figures/logo.png)
 
 The goal of {brandthis} is to quickly get you started with creating:
 
