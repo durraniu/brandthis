@@ -29,15 +29,12 @@ Suggests:
     shinychat,
     shinyAce,
     bslib,
-    quarto,
     future,
     ggplot2 (>= 3.5.2),
     markdown,
     dplyr,
     tidyr,
     tibble
-Remotes:
-    posit-dev/brand-yml/pkg-r
 Depends: 
     R (>= 3.5)
 LazyData: true

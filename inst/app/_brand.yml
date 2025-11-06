@@ -8,12 +8,8 @@ meta:
     mastodon: https://fosstodon.org/@posit.co
     github: https://github.com/posit-dev
 
-# logo:
-#   images:
-#     # dictionary of named images
-#   small:
-#   medium:
-#   large:
+logo:
+  medium: logo.png
 
 color:
   palette:

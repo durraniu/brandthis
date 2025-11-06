@@ -1,14 +1,6 @@
-rlang::check_installed("shiny")
-rlang::check_installed("shinychat")
-rlang::check_installed("shinyAce")
-rlang::check_installed("bslib")
-rlang::check_installed("quarto")
-rlang::check_installed("future")
+rlang::check_installed(c("shiny", "shinychat", "shinyAce", "bslib", "markdown", "dplyr", "tidyr", "tibble"))
+# rlang::check_installed("future")
 rlang::check_installed("ggplot2", version = "3.5.2")
-rlang::check_installed("markdown")
-rlang::check_installed("dplyr")
-rlang::check_installed("tidyr")
-rlang::check_installed("tibble")
 
 # Libraries
 library(shiny)
@@ -24,10 +16,10 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(tibble)
-library(future)
+# library(future)
 
 # Async processing
-plan(multisession)
+# plan(multisession)
 
 # Options
 options(bslib.color_contrast_warnings = FALSE)
@@ -453,7 +445,10 @@ page_plots <- nav_panel(title = "Plots",
 # UI ------
 ui <- page_navbar(
   theme = theme_brand,
-  title = "createBranding",
+  title = tagList(
+    brand.yml::brand_use_logo(brand, "medium"),
+    "createBranding"
+  ),
   fillable = TRUE,
   sidebar = brand_sidebar,
   page_dashboard,
