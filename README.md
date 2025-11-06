@@ -3,7 +3,7 @@
 
 # brandthis
 
-<img src="inst/figures/logo.png" align="right" height="138" alt="brandthis logo" />
+<img src="man/figures/logo.png" align="right" height="138" alt="brandthis logo" />
 
 <!-- badges: start -->
 
