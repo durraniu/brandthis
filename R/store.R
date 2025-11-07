@@ -58,9 +58,9 @@ update_store <- function(pkg = c("paletteer", "ggsci")) {
 
   fs::file_move(tmp, path)
 
-  store <- ragnar::ragnar_store_connect(path, read_only = FALSE)
-  on.exit(DBI::dbDisconnect(store@con), add = TRUE)
-  ragnar::ragnar_store_build_index(store)
+  # store <- ragnar::ragnar_store_connect(path, read_only = FALSE)
+  # on.exit(DBI::dbDisconnect(store@con), add = TRUE)
+  # ragnar::ragnar_store_build_index(store)
   invisible(NULL)
 }
 

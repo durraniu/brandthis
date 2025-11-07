@@ -22,7 +22,9 @@ for (page in pages) {
   ragnar_store_insert(store, chunks)
 }
 
-# ragnar_store_build_index(store)
+# store <- ragnar::ragnar_store_connect(store_location, read_only = FALSE)
+
+ragnar_store_build_index(store)
 DBI::dbDisconnect(store@con)
 
 
@@ -82,5 +84,9 @@ for (page in pp) {
   chunks <- page |> read_as_markdown() |> markdown_chunk()
   ragnar_store_insert(store, chunks)
 }
+
+store <- ragnar::ragnar_store_connect(store_location, read_only = FALSE)
+
+ragnar_store_build_index(store)
 
 DBI::dbDisconnect(store@con)
